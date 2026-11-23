@@ -1,0 +1,21 @@
+{
+  "name": "Warehouse oversell guard",
+  "heading": "Warehouse stock check",
+  "instructions": "Check each item. Then continue.",
+  "short": "Warehouse has {{available}}. Cart needs {{needed}}.",
+  "unknown": "Warehouse stock could not be checked.",
+  "choiceTakeNow": "The customer takes this item now from this store",
+  "choiceRemove": "Remove this item from the cart",
+  "footnote": "To ship the item from another location, remove it here and use your ship-from-store process.",
+  "nothingToDo": "No items need attention. Continue to checkout.",
+  "untitledItem": "Item",
+  "saveFailed": "Could not save the changes. Try again.",
+  "mustRemove": "Warehouse has {{available}}. This store has {{local}}. Cart needs {{needed}}.",
+  "mustRemoveNotice": "This item cannot be sold here. It is removed from the cart when you continue.",
+  "removed": "Items removed from the cart: {{count}}",
+  "unknownStore": "This store has {{local}}. Cart needs {{needed}}.",
+  "unknownHint": "Continue to check again, or remove the item.",
+  "details": "Details: {{reason}}",
+  "storeUnknown": "The stock of this store could not be checked.",
+  "diagnostics": "Diagnostics"
+}

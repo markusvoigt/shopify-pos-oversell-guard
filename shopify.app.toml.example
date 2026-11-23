@@ -1,0 +1,26 @@
+# Example app configuration for the POS warehouse oversell guard.
+# Copy this file to shopify.app.toml. Then run `shopify app config link` to connect it to your own app.
+# Afterwards, make sure that the [access.admin] and [access_scopes] blocks are still in shopify.app.toml.
+
+client_id = ""
+name = "pos-oversell-guard"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2027-01"
+
+# The extension reads stock with direct calls to the GraphQL Admin API.
+[access.admin]
+direct_api_mode = "online"
+embedded_app_direct_api_access = true
+
+[access_scopes]
+# read_products and read_inventory: stock figures. read_locations: automatic warehouse lookup.
+scopes = "read_products,read_inventory,read_locations"
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]

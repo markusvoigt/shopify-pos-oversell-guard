@@ -1,0 +1,23 @@
+api_version = "2026-10"
+[[extensions]]
+type = "ui_extension"
+# Change the merchant-facing name of the extension in locales/en.default.json
+name = "t:name"
+uid = "9e350088-3d92-cf26-a2da-4247cab5131d41496633"
+handle = "dc-oversell-guard"
+description = "Blocks a POS cart line when neither the store nor the warehouse has the item in stock"
+
+[extensions.supported_features]
+runs_offline = true
+
+[[extensions.targeting]]
+module = "./src/Background.jsx"
+target = "pos.app.ready.data"
+
+[[extensions.targeting.capabilities.intercepts]]
+event = "cartvalidations"
+blocking = true
+
+[[extensions.targeting]]
+module = "./src/CartResolution.jsx"
+target = "pos.cart.validations.resolution.render"

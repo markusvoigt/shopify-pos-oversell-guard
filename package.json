@@ -1,0 +1,15 @@
+{
+  "name": "pos-oversell-guard",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "workspaces": [
+    "extensions/*"
+  ],
+  "scripts": {
+    "dev": "shopify app dev",
+    "build": "shopify app build",
+    "deploy": "shopify app deploy",
+    "test": "node --test test/*.test.mjs"
+  }
+}
