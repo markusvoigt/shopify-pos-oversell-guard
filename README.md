@@ -2,6 +2,12 @@
 
 A proof-of-concept Shopify app. It stops a sale in Shopify POS when neither the store nor the warehouse has the item in stock. It does not touch a normal in-store sale.
 
+
+
+https://github.com/user-attachments/assets/06655bc3-8793-4b24-9d82-089aac0527d5
+
+
+
 > **Developer preview.** This app uses the Shopify POS cart validation feature: the [Intercept API](https://shopify.dev/docs/api/pos-ui-extensions/2026-10/target-apis/contextual-apis/intercept-api) and the [resolution targets](https://shopify.dev/docs/api/pos-ui-extensions/2026-10/targets/resolution-targets). Shopify offers this feature as a developer preview. It is available only to apps that Shopify has approved, and it can change. This code is a proof of concept to evaluate the feature. It is not a supported Shopify product.
 
 ## The problem
